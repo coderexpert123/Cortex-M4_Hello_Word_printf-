@@ -1,0 +1,21 @@
+12:19:59 **** Incremental Build of configuration Debug for project one12 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "one12.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\nisha\OneDrive\Desktop\New folder\p1\one12\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="one12.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: one12.elf
+ 
+arm-none-eabi-size  one12.elf 
+arm-none-eabi-objdump -h -S one12.elf  > "one12.list"
+   text	   data	    bss	    dec	    hex	filename
+   3380	     92	   1900	   5372	   14fc	one12.elf
+Finished building: default.size.stdout
+ 
+Finished building: one12.list
+ 
+12:23:12 **** Incremental Build of configuration Debug for project one12 ****
+make -j4 all 
+arm-none-eabi-size  one12.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3380	     92	   1900	   5372	   14fc	one12.elf
+Finished building: default.size.stdout
+ 

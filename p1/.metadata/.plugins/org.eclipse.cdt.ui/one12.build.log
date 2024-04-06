@@ -1,0 +1,10 @@
+12:23:12 **** Incremental Build of configuration Debug for project one12 ****
+make -j4 all 
+arm-none-eabi-size  one12.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3380	     92	   1900	   5372	   14fc	one12.elf
+Finished building: default.size.stdout
+ 
+
+12:23:12 Build Finished. 0 errors, 0 warnings. (took 300ms)
+
